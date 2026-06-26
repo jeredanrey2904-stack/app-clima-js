@@ -192,7 +192,8 @@ async function consultarClima(){
 
             <img src="https://openweathermap.org/img/wn/${datos.weather[0].icon}@4x.png">
 
-            <p><b>${datos.weather[0].description}</b></p>
+            <p><img width="1200" height="631" alt="rese" src="https://github.com/user-attachments/assets/fb8dc1cf-1a89-4390-9131-366280f8ea3c" />
+<b>${datos.weather[0].description}</b></p>
 
             <p>🌡 <b>Temperatura:</b> ${datos.main.temp} °C</p>
 
@@ -203,12 +204,3 @@ async function consultarClima(){
             <p>💨 <b>Viento:</b> ${datos.wind.speed} m/s</p>
 
         `;
-
-    }catch(error){
-
-        document.getElementById("resultado").innerHTML =
-        "<p>⚠ Error al conectar con la API.</p>";
-
-    }
-
-}
